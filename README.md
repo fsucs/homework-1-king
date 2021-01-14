@@ -1,14 +1,5 @@
-Getting Started
+Project Summary
 ===============
+Partner: None
 
-Please update this README file to showcase about this project. There is no specific format for README file, but you should tell about your overall project works and how can anyone will run your code.
-
-
-Installation and RUN
-
-Please specify, How to run this project?
-
-Documentation
-=============
-
-Feel free to generate a new Doxygen configuration. Please tell us how to look at your documentation.
+COP3330 Assignment 1: Create a program that takes a string as user input and outputs the number of times the most frequently occurring character appears.
