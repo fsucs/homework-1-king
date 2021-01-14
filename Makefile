@@ -1,15 +1,15 @@
 all: doc concat test
 	@echo "All done!"
 	
-doc: Doxyfile ./src/concat_primes.cpp ./include/example.hpp
+doc: Doxyfile ./src/main.cpp ./include/example.hpp
 	doxygen Doxyfile
 	@echo "Documentation extraction complete."
 
-concat: ./src/concat_primes.cpp ./include/example.hpp
-	g++ -g -Wall -std=c++11 -I ./include/ ./src/concat_primes.cpp -o ./bin/concat
+concat: ./src/main.cpp ./include/example.hpp
+	g++ -g -Wall -std=c++11 -I ./include/ ./src/main.cpp -o ./bin/main
 
-test: ./src/concat_primes.cpp
-	 ./bin/concat test
+test: ./src/main.cpp
+	 ./bin/main test
 	
 clean:
 	rm -rf ./doc/*
